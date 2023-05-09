@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Bro Codes</title>
+    <!-- Include Tailwind CSS stylesheet -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.16/tailwind.min.css" />
+  </head>
+  <body>
+    <div class="flex justify-center items-center h-screen">
+      <div class="w-5/6 p-6 h-full bg-white rounded-lg shadow-md">
+        <h1 class="text-3xl font-bold mb-4">Word Analysis</h1>
+        <form action = "/analysis" method = "post">
+          <div class="w-full mb-4 border border-gray-200 rounded-lg bg-gray-50 dark:bg-gray-700 dark:border-gray-600">
+            <div class="px-4 py-2 bg-white rounded-t-lg dark:bg-gray-800">
+              <textarea id="comment" rows="4" class="w-full h-96 px-0 text-base text-gray-900 bg-white border-0 dark:bg-gray-800 focus:ring-0 dark:text-white dark:placeholder-gray-400 resize-none" placeholder="Write here" name ="text" required></textarea>
+            </div>
+            <div class="flex items-center justify-between px-3 py-2 border-t dark:border-gray-600">
+              <button type="submit" class="inline-flex items-center py-2.5 px-4 text-xs font-medium text-center text-white bg-blue-700 rounded-lg focus:ring-4 focus:ring-blue-200 dark:focus:ring-blue-900 hover:bg-blue-800">submit</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
